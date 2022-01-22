@@ -1,25 +1,62 @@
-<p id="notice"><%= notice %></p>
+<h4 class="ui center aligned medium icon header">
+  <i class="circular orange github alternate icon"></i>
+  Say Something
+</h4>
 
-<h1>Chatrooms</h1>
+<div class="ui two column grid">
+  <div class="twelve wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui small feed">
+          <h4 class="ui header">Followers Activity</h4>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                <a>Elliot Fu</a> added <a>Jenny Hess</a> as a friend
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                <a>Stevie Feliciano</a> added <a>Elliot Fu</a> as a friend
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                <a>Helen Troy</a> added <a>Christian Rocha</a> as a friend
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                <a>Christian Rocha</a> signed up for the  site.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @chatrooms.each do |chatroom| %>
-      <tr>
-        <td><%= link_to 'Show', chatroom %></td>
-        <td><%= link_to 'Edit', edit_chatroom_path(chatroom) %></td>
-        <td><%= link_to 'Destroy', chatroom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Chatroom', new_chatroom_path %>
+  <div class="four wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui inverted vertical menu">
+          <a class="active item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
