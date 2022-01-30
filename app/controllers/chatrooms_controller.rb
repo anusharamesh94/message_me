@@ -3,6 +3,7 @@ class ChatroomsController < ApplicationController
 
   # GET /chatrooms or /chatrooms.json
   def index
+    @message = Message.new
     @messages = Message.all
   end
 end
