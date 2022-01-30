@@ -40,3 +40,4 @@ yarn-debug.log*
 .yarn-integrity
 package.json
 yarn.lock
+Gemfile.lock
